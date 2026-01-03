@@ -1,0 +1,165 @@
+/* ========== GLOBAL STYLES ========== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+/* ========== NAVBAR ========== */
+nav {
+  background-color: #1f2937;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  color: #ffffff;
+  margin-right: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav button {
+  margin-left: auto;
+  background-color: #ef4444;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* ========== PAGE CONTAINER ========== */
+.container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 6px;
+}
+
+/* ========== HEADINGS ========== */
+h1, h2, h3 {
+  margin-bottom: 15px;
+}
+
+/* ========== FORM STYLES ========== */
+form {
+  max-width: 400px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+/* ========== BOOK LIST ========== */
+.book-list {
+  list-style: none;
+  padding: 0;
+}
+
+.book-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.book-item:last-child {
+  border-bottom: none;
+}
+
+.book-title {
+  font-weight: 600;
+}
+
+.book-price {
+  color: #16a34a;
+  font-weight: bold;
+}
+
+/* ========== CART ========== */
+.cart {
+  margin-top: 20px;
+  background-color: #f9fafb;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+/* ========== ADMIN DASHBOARD ========== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+table th,
+table td {
+  border: 1px solid #e5e7eb;
+  padding: 10px;
+  text-align: left;
+}
+
+table th {
+  background-color: #f3f4f6;
+}
+
+.delete-btn {
+  background-color: #dc2626;
+}
+
+.delete-btn:hover {
+  background-color: #b91c1c;
+}
+
+/* ========== ORDERS PAGE ========== */
+.order {
+  border: 1px solid #e5e7eb;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  background-color: #f9fafb;
+}
+
+/* ========== UTILITY ========== */
+.text-center {
+  text-align: center;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}

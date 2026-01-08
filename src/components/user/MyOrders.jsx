@@ -7,8 +7,12 @@ const MyOrders = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
 
+
   useEffect(() => {
     fetchOrders();
+
+    const interval = setInterval(fetchOrders, 5000);
+    return () => clearInterval(interval);
   }, []);
 
   const fetchOrders = async () => {
@@ -84,12 +88,16 @@ const MyOrders = () => {
                   </p>
                 </div>
 
-                <span className={`px-3 py-1 rounded-full text-sm font-semibold
+                {/* <span className={`px-3 py-1 rounded-full text-sm font-semibold
   ${order.status === 'DELIVERED' ? 'bg-green-100 text-green-700' :
                     order.status === 'SHIPPED' ? 'bg-blue-100 text-blue-700' :
                       order.status === 'CANCELLED' ? 'bg-red-100 text-red-700' :
                         'bg-yellow-100 text-yellow-700'}
 `}>
+                  {order.status}
+                </span> */}
+
+                <span className={`px-3 py-1 rounded-full text-sm font-semibold ${getStatusColor(order.status)}`}>
                   {order.status}
                 </span>
 

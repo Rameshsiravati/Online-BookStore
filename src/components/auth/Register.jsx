@@ -39,7 +39,7 @@ const Register = () => {
       <div className="w-full max-w-md bg-white rounded-2xl shadow-lg p-8">
         {/* HEADER */}
         <h2 className="text-3xl font-bold text-gray-800 text-center mb-2">
-          Create Account ✨
+          Create Account 
         </h2>
         <p className="text-sm text-gray-500 text-center mb-6">
           Join Bookstore and start exploring

@@ -25,16 +25,20 @@ const AllOrders = () => {
   };
 
   const updateOrderStatus = async (orderId, newStatus) => {
-  try {
-    await api.put(
-      `/orders/${orderId}/status?status=${newStatus}`
-    );
-    fetchOrders(); // refresh list
-  } catch (err) {
-    alert("Failed to update order status");
-    console.error(err);
-  }
-};
+    try {
+      const normalizedStatus = newStatus.toUpperCase().trim();
+
+      await api.put(
+        `/orders/${orderId}/status?status=${normalizedStatus}`
+      );
+
+      fetchOrders(); // refresh list
+    } catch (err) {
+      console.error(err);
+      alert("Failed to update order status");
+    }
+  };
+
 
 
   if (loading) {
